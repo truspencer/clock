@@ -1,16 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="main.css">
+	<!-- CHARACTER SET -->
+	<meta charset="utf-8">
 
-	<title>Year Up Clock</title>
+	<!-- VIEWPORT SIZING FOR ALL DEVICES -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- AUTHOR -->
+	<meta name="author" content="Tyler West">
+
+	<!-- DESCRIPTION -->
+	<meta name="description" content="A simple digital clock built with html, css, and javascript.  It will give you the time of day in 12 hour format and the day of the week.">
+
+	<!-- TITLE -->
+	<title>YUNY Clock</title>
+
+	<!-- SHORTCUT ICON -->
+	<!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
+
+	<!-- CUSTOM EXTERNAL STYLESHEET -->
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<img src="yuny.jpg" alt="logo">
-	<h1>Welcome Class 29</h1>
-	<p>Here is a clock that not only displays the time but can also function as an alarm. Welcome to the start
-	of a wonderful journey :)</p>
-	<div class="table">
+	<main class="clock-display">
+		<h1>YUNY Clock</h1>
+		<h2>"Time is free, but it’s priceless. You can’t own it, but you can use it. You can’t keep it, but you can spend it. Once you’ve lost it you can never get it back." - Harvey Mackay</h2>
+		<div class="date-field">
+			<div class="day-of-week">
+				<p class="day-alpha"></p>
+				<p class="placeholder">Monday</p>
+				<p class="placeholder">Tuesday</p>
+				<p class="placeholder">Wednesday</p>
+				<p class="placeholder">Thursday</p>
+				<p class="placeholder">Friday</p>
+				<p class="placeholder">Saturday</p>
+				<p class="placeholder">Sunday</p>
+			</div>
+			<div class="day-of-week-mobile">
+				<p class="day-alpha-mobile"></p>
+				<p class="placeholder">Mon</p>
+				<p class="placeholder">Tues</p>
+				<p class="placeholder">Wed</p>
+				<p class="placeholder">Thurs</p>
+				<p class="placeholder">Fri</p>
+				<p class="placeholder">Sat</p>
+				<p class="placeholder">Sun</p>
+			</div>
+			<div class="month">
+				<p class="month-alpha"></p>
+				<p class="placeholder">Jan</p>
+				<p class="placeholder">Feb</p>
+				<p class="placeholder">March</p>
+				<p class="placeholder">April</p>
+				<p class="placeholder">May</p>
+				<p class="placeholder">June</p>
+				<p class="placeholder">July</p>
+				<p class="placeholder">Aug</p>
+				<p class="placeholder">Sept</p>
+				<p class="placeholder">Oct</p>
+				<p class="placeholder">Nov</p>
+				<p class="placeholder">Dec</p>
+				<p class="type">month</p>
+			</div>
+			<div class="date">
+				<p class="date-number"></p>
+				<p class="placeholder"></p>
+				<p class="type">day</p>
+			</div>
+			<div class="year">
+				<p class="year-number"></p>
+				<p class="placeholder"></p>
+				<p class="type">year</p>
+			</div>
+		</div>
+		<div class="clock-field">
+			<div class="numbers">
+				<p class="hours"></p>
+				<p class="placeholder"></p>
+				<p class="type">hour</p>
+			</div>
+			<div class="colon">
+				<p>:</p>
+			</div>
+			<div class="numbers">
+				<p class="minutes"></p>
+				<p class="placeholder"></p>
+				<p class="type">minute</p>
+			</div>
+			<div class="colon">
+				<p>:</p>
+			</div>
+			<div class="numbers">
+				<p class="seconds"></p>
+				<p class="placeholder"></p>
+				<p class="type">second</p>
+			</div>
+			<div class="am-pm">
+				<div>
+					<p class="am">am</p>
+				</div>
+				<div>
+					<p class="pm">pm</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+<div class="table">
   		<div class="cell">
     		<h1 id="clock" class="clock"></h1>
     
@@ -26,8 +124,8 @@
       <button id="snooze" class="hide">Snooze</button>
       <button id="startstop">Set Alarm</button>
     </p>
-  </div>
 </div>
-<script src="script.js"></script>
+
+	<script src="main.js"></script>
 </body>
 </html>
